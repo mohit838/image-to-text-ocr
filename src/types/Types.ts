@@ -11,3 +11,8 @@ export interface CustomButtonPropsTypes {
   cls?: string;
   currentStatus?: string;
 }
+
+export interface CustomFileUploadPropsTypes {
+  handleSingleImageUpload: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  imgPreview?: Blob | MediaSource;
+}

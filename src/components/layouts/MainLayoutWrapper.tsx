@@ -6,7 +6,7 @@ const MainLayoutWrapper = ({ children, cls }: ChildrenPropsTypes) => {
   return (
     <div className={`main-container ${cls}`}>
       <Header />
-      {children}
+      <div className='flex-1'>{children}</div>
       <Footer />
     </div>
   );
