@@ -4,11 +4,16 @@ const CustomButton = ({
   title,
   cls,
   currentStatus,
+  handleConvertImageToText,
 }: CustomButtonPropsTypes) => {
   return (
     <div className=''>
       {currentStatus && (
-        <button disabled type='button' className={`${cls}`}>
+        <button
+          onClick={handleConvertImageToText}
+          type='button'
+          className={`${cls}`}
+        >
           <svg
             aria-hidden='true'
             role='status'

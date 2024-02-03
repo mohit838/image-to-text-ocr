@@ -10,6 +10,7 @@ export interface CustomButtonPropsTypes {
   link?: string;
   cls?: string;
   currentStatus?: string;
+  handleConvertImageToText?: string;
 }
 
 export interface CustomFileUploadPropsTypes {

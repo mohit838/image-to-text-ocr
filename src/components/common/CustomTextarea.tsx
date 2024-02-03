@@ -1,9 +1,12 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-const CustomTextarea = () => {
+const CustomTextarea = ({ newText }) => {
+  console.log(newText);
+
   return (
-    <div className='w-full'>
+    <div className='w-full text-white'>
       <textarea
         name='convert-text'
+        value={newText}
         id='ocr'
         //@ts-ignore
         cols='30'
